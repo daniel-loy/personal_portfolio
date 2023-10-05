@@ -1,0 +1,221 @@
+body{
+    background-image: url("ip5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ....................................nav bar................................... */
+.navbar {
+    overflow: hidden;
+    background-color: gray;
+    font-family: Arial;
+    width: 55vw;
+    float: right;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    border: 4px solid greenyellow;
+    box-shadow: 10px 10px 10px greenyellow;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: rem;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .navbar a:hover {
+    transform: scale(1.3);
+  }
+/* ................................my photo........................................*/
+.image{
+   width: 50vb;
+   height: 50vh;
+   margin-top: 20vh;
+   border-radius: 100px;
+   box-shadow: 10px 10px 10px black;
+}
+.image:hover{
+  transform: scale(1.05);
+} 
+
+/*........................... website visit count................................... */
+.web{
+ margin-top: 10px;
+ width: 180px;
+ display: flex;
+ justify-content: space-evenly;
+} 
+#server-time{
+  position: absolute;
+ font-size: 20px;
+ top:60px;
+ left: 100px;
+}
+/* ................................circle............................................ */
+.img2{
+    /* height: 15vh; */
+    width: 14vw;
+    position: absolute;
+    left: 66.5vw;
+    top: 10vw;
+    animation: rotation 3s infinite;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+/* ..................................name logo.......................................... */
+.logo{
+    display: inline-block;
+    position:absolute;
+    width: 10vw;
+    /* height: 15vh; */
+    /* margin:25vh 43vw; */
+    left: 68.5vw;
+    top: 12vw;
+    border-radius: 50%;
+} 
+/* ............................welcome text....................................... */
+.wel{
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    position: absolute;
+    left: 60px;
+    top:0px;
+    font-family: "Lucida Handwriting", cursive;
+    width: 200px;
+}
+.hi{
+    animation:hi 2s infinite;
+}
+@keyframes hi{
+    from{
+        transform:scaleY(1);
+    }
+    to{
+        transform:scaleY(1.5);
+    }
+}
+/* ....................................introduction text and button............................ */
+.intro{
+    position: absolute;
+    left: 55vw;    
+    top:53vh;
+    text-align:center;
+    font-size: 1rem;
+    font-family:Didot, serif;
+}
+.intro h2{
+    font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+.intro h2,h1
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.but{
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color:gray;
+    border: 3px solid greenyellow;
+    cursor: pointer;
+    transition:all 0.5s;
+}
+.but:hover{
+    padding:12px 12px;
+    box-shadow: 5px 5px 4px greenyellow;
+    font-size: medium;
+}
+.but a{
+    text-decoration: none;
+    color: white;
+}
+.ref img{
+    height:3.5vw;
+    width:3.5vw;
+    margin-top: 40px;
+    padding-left:20px; 
+    cursor: pointer;
+}
+.ref img:hover{
+  transform: scale(1.3);
+}
+
+/* ............................................................................... */
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("mob.jpg");
+    background-size:550px;
+  }
+  .navbar{
+    position: absolute;
+    width: 93vw;
+    top: 10vw;
+  }
+  .navbar a{
+  color: #fff;
+  font-size: 0.8rem;
+  padding:4vw 3vw;
+  }
+  .image{
+    display: none;
+  }
+  .logo{
+    top: 35vh;
+    left:44vw;
+    height: 7vh;
+    width: 15vw;
+  }
+  .img2{
+    top:32vh;
+    left: 39vw;
+    width: 25vw;
+    border-radius: 50px;
+  }
+  .intro{
+    font-size: 0.5rem;
+    left: 10vh;
+  }
+  .ref {
+      margin-top: 150vw;
+      margin-left: 20vw;
+  }
+  .web{
+    display: none;
+  }
+  .wel{
+    font-size: 0.6rem;
+    top: 20vh;
+    left: 11vh;
+    justify-content: center;
+    font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  }
+#server-time{
+  display: none;
+}
+}
+
+
